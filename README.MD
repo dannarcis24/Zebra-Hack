@@ -3,7 +3,7 @@
 
 This repository contains the work done by team `REPLACE_WITH_YOUR_TEAM_NAME` for ZebraHack2.0, the hackathon organized for the Web Technologies course at ACS in UPB.
 
-> Write here a description of your project.
+> Write here a description of your project. (https://docs.google.com/presentation/d/1vigdIJdlhJS4Uv-K-T3IAvGVl4edCLXawjqTO2SMLQA/edit#slide=id.p)
 
 ## General requirements
 
