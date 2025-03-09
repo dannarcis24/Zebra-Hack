@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Caută Furnizori</title>
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="task2.js"></script>
+    </head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="logo without background.png" alt="Alumil Logo" style="height: 50px;">
+        </a>
+        <button class="menu-toggle" aria-label="Deschide Meniu">&#9776;</button>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="cautare_furnizori.html">Caută furnizori</a></li>
+                <li><a href="cereri_oferta.html">Cereri de ofertă</a></li>
+                <li><a href="analiza_oferte.html">Analiză oferte</a></li>
+                <li><a href="export.html">Export</a></li>
+            </ul>
+        </nav>
+    </header>    
+
+    <section>
+        <main>
+            <h1>Caută Furnizori</h1>
+            <form id="search-form">
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    placeholder="Caută după nume, produs sau categorie..." 
+                />
+                <button type="button" id="search-button">Caută</button>
+            </form>
+            <table id="results-table" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Numele Furnizorului</th>
+                        <th>Produs/Serviciu</th>
+                        <th>Link către site</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rezultatele vor apărea aici -->
+                </tbody>
+            </table>
+        </main>
+        
+        <br><br><br><br>
+    <script src="script.js"></script>
+    </section>
+    <footer>Fr33P1zz4</footer>
+</body>
+</html>

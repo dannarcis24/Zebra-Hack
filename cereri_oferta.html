@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fr33P1zz4</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="oferta.css">
+    <script>
+        // Script pentru a arăta containerul cu rezultate
+        function showResults() {
+            var searchQuery = document.getElementById('search-input').value.trim();
+            if (searchQuery !== "") {
+                // Dacă există text în câmpul de căutare, afişăm containerul cu rezultatele
+                document.getElementById('results-container').style.display = 'block';
+            } else {
+                // Dacă nu există text, ascundem containerul
+                document.getElementById('results-container').style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="logo without background.png" alt="Alumil Logo" style="height: 50px;">
+        </a>
+        <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Acasa</a></li>
+                <li><a href="cautare_furnizori.html">Cauta furnizori</a></li>
+                <li><a href="cereri_oferta.html">Cereri de oferta</a></li>
+                <li><a href="analiza_oferte.html">Analiza oferte</a></li>
+                <li><a href="export.html">Export</a></li>
+            </ul>
+        </nav>
+    </header>   
+
+    <div class="content">
+        <h1>Cauta oferte:</h1>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Caută...">
+            <button onclick="showResults()">Caută</button>
+        </div>
+    </div> <br>
+
+    <!-- Containerul de rezultate care este ascuns inițial -->
+    <div id="results-container" class="container">
+        <h1>Rezultate Căutare</h1>
+        <table>
+            <theadp>
+                <tr>
+                    <th>Furnizor</th>
+                    <th>Produs/Serviciu</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="preferat">
+                    <td>Furnizor A</td>
+                    <td>Usi glisante</td>
+                    <td><a href="https://www.furnizorA.com" target="_blank">Viziteaza site</a></td>
+                </tr>
+                <tr>
+                    <td>Furnizor B</td>
+                    <td>Geamuri termopan</td>
+                    <td><a href="https://www.furnizorB.com" target="_blank">Viziteaza site</a></td>
+                </tr>
+                <tr>
+                    <td>Furnizor C</td>
+                    <td>Usi de interior</td>
+                    <td><a href="https://www.furnizorC.com" target="_blank">Viziteaza site</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div> <br>
+
+    <footer>Fr33P1zz4</footer>
+</body>
+</html>

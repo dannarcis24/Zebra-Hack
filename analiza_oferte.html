@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="logo without background.png" alt="Alumil Logo" style="height: 50px;">
+        </a>
+        <button class="menu-toggle" aria-label="Deschide Meniu">&#9776;</button>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Acasa</a></li>
+                <li><a href="cautare_furnizori.html">Cauta furnizori</a></li>
+                <li><a href="cereri_oferta.html">Cereri de oferta</a></li>
+                <li><a href="analiza_oferte.html">Analiza oferte</a></li>
+                <li><a href="export.html">Export</a></li>
+            </ul>
+        </nav>
+    </header>   
+    <main>
+        <h1>Comparație Oferte</h1>
+        <form id="offer-form">
+            <label for="supplier-name">Nume Furnizor:</label>
+            <input type="text" id="supplier-name" name="supplier-name" required>
+            
+            <label for="price">Preț:</label>
+            <input type="number" id="price" name="price" required>
+            
+            <label for="delivery-terms">Termeni de Livrare:</label>
+            <input type="text" id="delivery-terms" name="delivery-terms" required>
+            
+            <label for="payment-terms">Termeni de Plată:</label>
+            <input type="text" id="payment-terms" name="payment-terms" required>
+            
+            <button type="button" onclick="addOffer()">Adaugă Ofertă</button>
+        </form>
+        
+        <h2>Oferte</h2>
+        <table id="offers-table">
+            <thead>
+                <tr>
+                    <th>Nume Furnizor</th>
+                    <th>Preț</th>
+                    <th>Termeni de Livrare</th>
+                    <th>Termeni de Plată</th>
+                    <th>Șterge</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Ofertele vor fi adăugate aici -->
+            </tbody>
+        </table>
+        
+        <h2>Raport de Comparație</h2>
+        <button type="button" onclick="generateComparisonReport()">Generează Raport de Comparație</button>
+        <div id="comparison-report">
+        </div>
+    </main>
+    
+    <br><br><br><br>
+    <script src="script.js"></script>
+    <script src="task4.js"></script>
+    
+    <footer>Fr33P1zz4</footer>
+    </body>
+    </html>
